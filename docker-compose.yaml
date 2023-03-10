@@ -6,6 +6,7 @@ services:
   code:
     container_name: code
     image: totalplatform/code
+    restart: always
     volumes:
       - codedata:/databases
       - /www/www/:/www/www     # Edit development folder
