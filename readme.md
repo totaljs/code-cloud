@@ -11,4 +11,5 @@ __Instructions__:
 	- follow step 1
 	- follow step 2
 - clone this project
+- edit `docker-compose.yaml`
 - run `docker compose up -d`
