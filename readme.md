@@ -6,8 +6,9 @@
 
 __Instructions__:
 
+- target DNS of your domains to your server
 - clone on your server https://github.com/evertramos/nginx-proxy-automation
 	- follow step 1
 	- follow step 2
 - clone this project
-- run `docker compose up`
+- run `docker compose up -d`
