@@ -1,0 +1,27 @@
+version: '3.1'
+
+# Run proxy server and Total.js Code
+services:
+
+  code:
+    container_name: code
+    image: totalplatform/code
+    volumes:
+      - codedata:/databases
+      - /www/www/:/www/www     # Edit development folder
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+    - LETSENCRYPT_HOST=code.youdomain.com
+    - VIRTUAL_HOST=code.youdomain.com
+    - VIRTUAL_PORT=8000
+    - FOLDER_WWW=/www/www/              # Edit development folder
+    - FOLDER_NPM=/www/node_modules/     # Edit node_modules folder
+    - HTTPS_METHOD=redirect
+
+volumes:
+  codedata:
+
+networks:
+  default:
+    name: proxy
+    external: true
