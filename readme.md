@@ -7,6 +7,7 @@
 __Instructions__:
 
 - target DNS of your domains to your server
+- install docker
 - clone on your server https://github.com/evertramos/nginx-proxy-automation
 	- follow step 1
 	- follow step 2
