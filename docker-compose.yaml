@@ -9,15 +9,16 @@ services:
     restart: always
     volumes:
       - codedata:/databases
-      - /www/www/:/www/www     # Edit development folder
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /www/www/:/www/www                    # Edit development folder
     environment:
-    - LETSENCRYPT_HOST=code.youdomain.com
-    - VIRTUAL_HOST=code.youdomain.com
-    - VIRTUAL_PORT=8000
-    - FOLDER_WWW=/www/www/              # Edit development folder
-    - FOLDER_NPM=/www/node_modules/     # Edit node_modules folder
-    - HTTPS_METHOD=redirect
+      - FOLDER_WWW=/www/www/                  # Edit development folder
+      - FOLDER_NPM=/www/node_modules/         # Edit node_modules folder
+      - LETSENCRYPT_HOST=code.youdomain.com
+      - VIRTUAL_HOST=code.youdomain.com
+      - VIRTUAL_PORT=8000
+      - VIRTUAL_MAX_UPLOAD=100
+      - HTTPS_METHOD=redirect
 
 volumes:
   codedata:
