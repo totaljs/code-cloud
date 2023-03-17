@@ -19,7 +19,7 @@ services:
       - VIRTUAL_PORT=8000
       - VIRTUAL_MAX_UPLOAD=100
       - HTTPS_METHOD=redirect
-      - DISABLE_ACCESS_LOGS
+      - DISABLE_ACCESS_LOGS=1
 
 volumes:
   codedata:
