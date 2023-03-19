@@ -11,6 +11,10 @@ __Instructions__:
 - clone on your server https://github.com/evertramos/nginx-proxy-automation
 	- follow step 1
 	- follow step 2
-- clone this project
+- install Node.js
+- make `/www/www/` directory
+- make `/www/node_modules/` directory
+- install `$ npm install total4`
+- then clone this project
 - edit `docker-compose.yaml`
 - run `docker compose up -d`
