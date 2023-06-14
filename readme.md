@@ -18,3 +18,7 @@ __Instructions__:
 - then clone this project
 - edit `docker-compose.yaml`
 - run `docker compose up -d`
+
+---
+
+We recommend merging the `proxy` folder with the `nginx-proxy-automation` folder for extending NGINX configuration.
