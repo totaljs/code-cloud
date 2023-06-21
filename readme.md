@@ -10,7 +10,8 @@ __Instructions__:
 - install docker
 - clone on your server https://github.com/evertramos/nginx-proxy-automation
 	- follow step 1
-	- follow step 2
+	- `cd proxy/bin`
+	- `fresh-start.sh --yes -e your_email@domain --skip-docker-image-check --use-nginx-conf-files`
 - install Node.js
 - make `/www/www/` directory
 - make `/www/node_modules/` directory
