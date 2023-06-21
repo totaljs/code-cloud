@@ -10,7 +10,6 @@ services:
     volumes:
       - codedata:/code/databases
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./config:/etc/nginx/conf.d
       - /www/www/:/www/www                    # Edit development folder
     environment:
       - FOLDER_WWW=/www/www/                  # Edit development folder
