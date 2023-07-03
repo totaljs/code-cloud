@@ -10,10 +10,10 @@ services:
     volumes:
       - codedata:/code/databases
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /www/www/:/www/www                    # Edit development folder
+      - /yourlocalpath/:/www/www                    # Edit development folder
     environment:
-      - FOLDER_WWW=/www/www/                  # Edit development folder
-      - FOLDER_NPM=/www/node_modules/         # Edit node_modules folder
+      - FOLDER_WWW=/yourlocalpath/                  # Edit development folder
+      - FOLDER_NPM=/yourlocalpath/node_modules/     # Edit node_modules folder
       - LETSENCRYPT_HOST=code.youdomain.com
       - VIRTUAL_HOST=code.youdomain.com
       - VIRTUAL_PORT=8000
