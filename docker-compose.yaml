@@ -14,6 +14,7 @@ services:
     environment:
       - FOLDER_WWW=/yourlocalpath/                  # Edit development folder
       - FOLDER_NPM=/yourlocalpath/node_modules/     # Edit node_modules folder
+      # - ORIGIN=https://{0}.abc.eu.totaljs.cloud     # A custom origin due to URL restrictions
       - LETSENCRYPT_HOST=code.youdomain.com
       - VIRTUAL_HOST=code.youdomain.com
       - VIRTUAL_PORT=8000
