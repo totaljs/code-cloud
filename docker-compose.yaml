@@ -12,6 +12,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - /yourlocalpath/:/www/www                    # Edit development folder
     environment:
+      - UID=code                                    # A custom code ID
       - FOLDER_WWW=/yourlocalpath/                  # Edit development folder
       - FOLDER_NPM=/yourlocalpath/node_modules/     # Edit node_modules folder
       # - ORIGIN=https://{0}.abc.eu.totaljs.cloud     # A custom origin due to URL restrictions
