@@ -43,6 +43,7 @@ Just create a text file with NGINX your configuration. The file below is appende
 ```
 /www/proxy/data/vhost.d/yourdomain.com
 /www/proxy/data/vhost.d/subdomain.yourdomain.com
+/www/proxy/data/vhost.d/default             --> for all domains
 ```
 
 The file below is appended into the `location / {`:
@@ -50,6 +51,7 @@ The file below is appended into the `location / {`:
 ```
 /www/proxy/data/vhost.d/yourdomain.com_location
 /www/proxy/data/vhost.d/subdomain.yourdomain.com_location
+/www/proxy/data/vhost.d/default_location    --> for all domains
 ```
 
 ---
